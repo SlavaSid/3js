@@ -119,4 +119,11 @@ if (limit <= nums[i]){
 }else{};
 }
 
+//Задание 9 Существует массив объектов, описывающих пользователей, например: const users = [{name: 'Vasya', age: 23}, {name: 'Olya', age: 12}, {name: 'Anna', age: 22}, {name: 'Alex', age: 18}, {name: 'Valery', age: 8}] Пройти в цикле по массиву и вывести имена всех пользователей, возраст которых больше 15.
 
+const users = [{name: 'Vasya', age: 23}, {name: 'Olya', age: 12}, {name: 'Anna', age: 22}, {name: 'Alex', age: 18}, {name: 'Valery', age: 8}];
+for(let i = 0; i < users.length; i++){
+    if(users[i].age > 15){
+       console.log(users[i].name);
+    }
+}
