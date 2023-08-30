@@ -116,7 +116,7 @@ let newNuns = [];
 for(let i = 0; i < nums.length; i++){
 if (limit <= nums[i]){
     newNuns.push(nums[i]);
-}
+}else{};
 }
 
 
