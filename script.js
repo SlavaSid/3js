@@ -64,7 +64,7 @@ let sum = 0;
 for(let i = 0; i < numbers.length; i++){
     if(numbers[i] % 2 === 0){
         sum = sum + numbers[i];
-    }else{};
+    }
    
 }
 console.log(sum); 
@@ -72,10 +72,10 @@ console.log(sum);
 //6-4
 let numbers = [42, 65, 49, 68, 56, 47, 70, 42, 51, 35, 58, 63, 40, 70];
 
-let max = 42;
+let max = numbers[0];
 
 for(let i = 0; i < numbers.length; i++){
-    if(max > numbers[i] || max === numbers[i]){
+    if(max >= numbers[i]){
         max = max;
     }else{
         max = numbers[i];
@@ -92,7 +92,7 @@ let max = 70;
 for(let i = 0; i < numbers.length; i++){
     if(max === numbers[i]){
    console.log(i);
-          }else{}
+          }
   
 } 
 
@@ -103,7 +103,7 @@ let newArr = [];
 for(let i = 0; i < arr.length; i++){
     if(0 < arr[i]){
         newArr.push(arr[i]);
-    }else{};
+    }
 }
 
 
@@ -116,7 +116,7 @@ let newNuns = [];
 for(let i = 0; i < nums.length; i++){
 if (limit <= nums[i]){
     newNuns.push(nums[i]);
-}else{};
+}
 }
 
 //Задание 9 Существует массив объектов, описывающих пользователей, например: const users = [{name: 'Vasya', age: 23}, {name: 'Olya', age: 12}, {name: 'Anna', age: 22}, {name: 'Alex', age: 18}, {name: 'Valery', age: 8}] Пройти в цикле по массиву и вывести имена всех пользователей, возраст которых больше 15.
@@ -127,3 +127,8 @@ for(let i = 0; i < users.length; i++){
        console.log(users[i].name);
     }
 }
+
+//Задание 10 Задать массив слов. Например:let vegetables = ["морковь", "баклажан", "репа", "топинамбур"];1) Создать новый массив. С помощью цикла наполнить его объектами с ключами word (само слово), length (длина слова):[{word:'морковь', length: 7}, {word:'баклажан', length: 8} и т.п.]Вывести этот массив в консоль.Подсказка: длину строки можно определить с помощью метода .length. Например, для переменной let string = 'text' это будет string.length (результат - 4, т.к. слово text состоит из 4 символов)2) Пройтись по полученному массиву объектов и вывести в консоль строки вида "слово - длина_слова", например "картошка - 8"
+
+
+let vegetables = ["морковь", "баклажан", "репа", "топинамбур"];
